@@ -1,21 +1,19 @@
-%define upstream_name    Encode-Locale
-%define upstream_version 1.02
+%define modname	Encode-Locale
+%define modver	1.02
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    6
-
-Summary:    Determine the locale encoding
-License:    GPL+ or Artistic
-Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Encode/%{upstream_name}-%{upstream_version}.tar.gz
-
-BuildRequires: perl(Encode)
-BuildRequires: perl(Encode::Alias)
-BuildRequires: perl(Test)
-BuildRequires: perl-devel
-BuildArch: noarch
+Summary:	Determine the locale encoding
+Name:		perl-%{modname}
+Version:	%perl_convert_version %{modver}
+Release:	6
+License:	GPLv2+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{modname}
+Source0:	http://www.cpan.org/modules/by-module/Encode/%{modname}-%{modver}.tar.gz
+BuildArch:	noarch
+BuildRequires:	perl(Encode)
+BuildRequires:	perl(Encode::Alias)
+BuildRequires:	perl(Test)
+BuildRequires:	perl-devel
 
 %description
 In many applications it's wise to let Perl use Unicode for the strings it
@@ -41,7 +39,7 @@ traditional Unix systems this will be an alias to the same encoding as
 "locale".
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -qn %{modname}-%{modver}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
@@ -56,24 +54,6 @@ traditional Unix systems this will be an alias to the same encoding as
 
 %files
 %doc Changes META.yml README
+%{perl_vendorlib}/*
 %{_mandir}/man3/*
-%perl_vendorlib/*
-
-
-%changelog
-* Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 1.20.0-4mdv2012.0
-+ Revision: 765198
-- rebuilt for perl-5.14.2
-
-* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 1.20.0-3
-+ Revision: 763714
-- rebuilt for perl-5.14.x
-
-* Fri Jan 20 2012 Oden Eriksson <oeriksson@mandriva.com> 1.20.0-2
-+ Revision: 763060
-- rebuild
-
-* Mon May 02 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.20.0-1
-+ Revision: 662537
-- import perl-Encode-Locale
 
