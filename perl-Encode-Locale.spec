@@ -1,14 +1,14 @@
 %define modname	Encode-Locale
-%define modver	1.02
+%define modver 1.03
 
 Summary:	Determine the locale encoding
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Encode/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Encode/Encode-Locale-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Encode)
 BuildRequires:	perl(Encode::Alias)
@@ -56,4 +56,5 @@ traditional Unix systems this will be an alias to the same encoding as
 %doc Changes META.yml README
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
+
 
