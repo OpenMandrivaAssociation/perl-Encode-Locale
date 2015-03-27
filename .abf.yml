@@ -1,4 +1,5 @@
 removed_sources:
   Encode-Locale-1.02.tar.gz: 25f79c9fc7636887ddf00e0a759a8cd4b9cb492c
-sources:
   Encode-Locale-1.03.tar.gz: b37c3dbb98b56d31cc8af35a548096bfbf44820f
+sources:
+  Encode-Locale-1.04.tar.gz: 1f525d437d0cfc18443aaa29597b14ceaeb240c2
