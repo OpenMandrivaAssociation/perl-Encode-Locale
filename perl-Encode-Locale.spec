@@ -1,10 +1,10 @@
 %define modname	Encode-Locale
-%define modver 1.03
+%define modver 1.05
 
 Summary:	Determine the locale encoding
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	8
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
