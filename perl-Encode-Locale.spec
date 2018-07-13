@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Encode/Encode-Locale-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Encode)
 BuildRequires:	perl(Encode::Alias)
 BuildRequires:	perl(Test)
