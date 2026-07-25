@@ -3,12 +3,12 @@
 
 Summary:	Determine the locale encoding
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	%{modver}
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Encode/Encode-Locale-%{modver}.tar.gz
+Url:		https://github.com/gisle/encode-locale
+Source0:	https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
